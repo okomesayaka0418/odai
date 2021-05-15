@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mickeyButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="ミッキー"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ElmoButton"
+        app:layout_constraintEnd_toStartOf="@+id/snoopyButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ElmoButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/numberTextViwe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sturtButton"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="43dp"
+        android:text="START"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kittyButton" />
+
+    <TextView
+        android:id="@+id/timeLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TIME"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/secondText"
+        app:layout_constraintStart_toEndOf="@+id/secondText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeLabelText" />
+
+    <Button
+        android:id="@+id/minionButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="32dp"
+        android:text="ミニオン"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/chiristophButton"
+        app:layout_constraintEnd_toStartOf="@+id/snoopyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/snoopyButton" />
+
+    <Button
+        android:id="@+id/supidermanButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="94dp"
+        android:text="スパイダーマン"
+        app:layout_constraintBottom_toTopOf="@+id/sturtButton"
+        app:layout_constraintEnd_toEndOf="@+id/kittyButton"
+        app:layout_constraintStart_toEndOf="@+id/kittyButton"
+        app:layout_constraintTop_toBottomOf="@+id/MaxButton" />
+
+    <Button
+        android:id="@+id/geratoniButton"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="223dp"
+        android:text="ジェラトーニ"
+        app:layout_constraintBottom_toTopOf="@+id/kittyButton"
+        app:layout_constraintEnd_toStartOf="@+id/supidermanButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeLabelText" />
+
+    <Button
+        android:id="@+id/MaxButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="マックス"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ElmoButton"
+        app:layout_constraintStart_toEndOf="@+id/snoopyButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/snoopyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="156dp"
+        android:text="スヌーピー"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minionButton"
+        app:layout_constraintTop_toBottomOf="@+id/MaxButton" />
+
+    <Button
+        android:id="@+id/LiloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="31dp"
+        android:text="リロ"
+        app:layout_constraintBottom_toBottomOf="@+id/geratoniButton"
+        app:layout_constraintStart_toEndOf="@+id/geratoniButton" />
+
+    <Button
+        android:id="@+id/chiristophButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="60dp"
+        android:text="クリストフ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snoopyButton" />
+
+    <Button
+        android:id="@+id/ElmoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="39dp"
+        android:text="エルモ"
+        app:layout_constraintBottom_toTopOf="@+id/LiloButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/kittyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:text="キティちゃん"
+        app:layout_constraintStart_toEndOf="@+id/chiristophButton"
+        app:layout_constraintTop_toBottomOf="@+id/chiristophButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="324dp"
+        android:layout_height="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ディズニーキャラクターを5個見つけよう！"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
